@@ -1,0 +1,103 @@
+@font-face {
+     font-family: "GangwonEduPowerExtraBoldA";
+     src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff")
+          format("woff");
+     font-weight: normal;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: "Pretendard-Regular";
+     src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+          format("woff");
+     font-weight: 400;
+     font-style: normal;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+ul {
+     list-style: none;
+}
+a {
+     text-decoration: none;
+     color: black;
+}
+.slider {
+     overflow: hidden;
+}
+.slick-dots {
+     position: absolute;
+     bottom: -30px; /* 점을 슬라이드 아래에 위치 */
+     left: 50%;
+     transform: translateX(-50%); /* 가로로 중앙 정렬 */
+     padding: 0;
+     margin: 0;
+     list-style-type: none;
+}
+
+.slick-dots li {
+     display: inline-block; /* 점을 가로로 정렬 */
+     margin: 0 10px; /* 점 사이의 간격 */
+}
+
+.slick-dots li button {
+     background-color: #000000;
+     border: 2px solid #ccc;
+     border-radius: 50%; /* 동그라미 모양 */
+     width: 12px;
+     height: 12px;
+     padding: 0;
+     cursor: pointer;
+     outline: none;
+     position: relative;
+     transition: background-color 0.3s;
+     z-index: 1; /* 버튼을 가상 요소 위에 배치 */
+}
+
+.slick-dots li button:before {
+     content: "";
+     display: block;
+     width: 8px; /* 점의 크기 조정 */
+     height: 8px; /* 점의 크기 조정 */
+     background-color: #000; /* 점 색상 */
+     border-radius: 50%; /* 원형 */
+     position: absolute;
+     top: 50%; /* 버튼 중앙에 위치 */
+     left: 50%;
+     transform: translate(-50%, -50%);
+     opacity: 1; /* 불투명도 */
+}
+.slick-dots li button {
+     background: none; /* 버튼 배경 제거 */
+     border: none; /* 버튼 테두리 제거 */
+}
+
+/* 버튼에 호버 시 색상 변경 */
+.slick-dots li button:hover {
+     background-color: #ff4c4c;
+}
+
+/* 선택된 버튼 스타일 */
+.slick-dots li.slick-active button {
+     background-color: #333;
+     border-color: #333;
+}
+
+.cardnews {
+     display: flex;
+     flex-direction: column;
+     margin: 30px 0 50px 0;
+}
+.cardnews p span {
+     color: red;
+     font-weight: bold;
+}
+.cardnews p {
+     padding-left: 5%;
+     margin-bottom: 30px;
+}

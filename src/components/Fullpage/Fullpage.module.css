@@ -1,0 +1,51 @@
+.title {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     padding-left: 5%;
+     margin-bottom: 20px;
+}
+.title h3 {
+     font-family: "GangwonEduPowerExtraBoldA";
+     padding-top: 60px;
+     font-size: 40px;
+}
+.title p {
+     width: 90%;
+     font-size: 16px;
+}
+
+.main_page .link {
+     display: flex;
+}
+
+.main_page .link a {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 5rem;
+     width: 90%;
+     margin: 0 auto;
+     border: 1px solid #cec1a3;
+     border-radius: 10px;
+     background-color: white;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+     padding: 0 20px;
+     margin-bottom: 20px;
+}
+.main_page .link a img {
+     width: 60px;
+}
+@media screen and (min-width: 800px) {
+     .main_page {
+          width: 95%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+     }
+     .main_page .link {
+          width: 50%;
+     }
+}

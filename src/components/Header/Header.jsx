@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import menuBar from "../../assets/but_toggle.png";
 import logoImg from "../../assets/png_logo.png";
@@ -27,7 +28,7 @@ export default function Header() {
      };
 
      const links = [
-          { link: "1", title: "전통주 검색하기" },
+          { link: "./Search", title: "전통주 검색하기" },
           { link: "2", title: "위치 안내" },
           { link: "3", title: "카드 뉴스" },
      ];
@@ -42,9 +43,9 @@ export default function Header() {
                     links={links}
                />
                <p>
-                    <a href="">
-                         <img src={logoImg} />
-                    </a>
+                    <Link to="/">
+                         <img src={logoImg} alt="Logo" />
+                    </Link>
                </p>
                <UList className={styles.pc_menu} links={links} />
                <div className={styles.utility}>

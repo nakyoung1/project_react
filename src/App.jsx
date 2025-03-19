@@ -5,6 +5,7 @@ import Map from "./components/Map/Map.jsx";
 import CardNews from "./components/Cardnews/Cardnews.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Whatis from "./components/Whatis/Whatis.jsx";
+import Search from "./components/Search/Search.jsx";
 import "./App.css";
 
 function App() {
@@ -23,7 +24,9 @@ function App() {
                                    </>
                               }
                          />
-                         <Route path="/whatis" element={<Whatis />} />
+
+                         <Route path="/Whatis" element={<Whatis />} />
+                         <Route path="/Search" element={<Search />} />
                     </Routes>
                </main>
                <Footer />

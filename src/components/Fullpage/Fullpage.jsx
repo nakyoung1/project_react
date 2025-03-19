@@ -38,7 +38,7 @@ function UList2({ links }) {
 export default function Main() {
      const links = [
           { link: "/Whatis", title: "전통주란?", img: img1 },
-          { link: "", title: "전통주 검색하기", img: img2 },
+          { link: "/Search", title: "전통주 검색하기", img: img2 },
           { link: "", title: "전통주와 어울리는 음식", img: img3 },
           { link: "", title: "이 달의 전통주", img: img4 },
      ];

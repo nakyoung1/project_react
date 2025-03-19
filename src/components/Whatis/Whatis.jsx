@@ -1,5 +1,4 @@
-import Header from "../Header/Header.jsx";
-import Footer from "../Footer/Footer.jsx";
+import "../../App.css";
 
 function Whatis() {
      return (

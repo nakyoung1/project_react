@@ -28,6 +28,7 @@ a {
      color: black;
 }
 header {
+     width: 100vw;
      height: 8rem;
      display: flex;
      justify-content: space-between;

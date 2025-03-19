@@ -30,8 +30,11 @@
      border-radius: 10px;
      background-color: white;
      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-     padding: 0 20px;
+     padding: 0 7%;
      margin-bottom: 20px;
+     color: #333;
+     font-weight: 700;
+     font-size: 16px;
 }
 .main_page .link a img {
      width: 60px;

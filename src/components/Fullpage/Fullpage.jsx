@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "../Fullpage/Fullpage.module.css";
 import img1 from "../../assets/fullpage1.png";
 import img2 from "../../assets/fullpage2.png";
@@ -17,10 +18,10 @@ function Title() {
 function List2({ link, title, img }) {
      return (
           <li className={styles.link}>
-               <a href={link}>
+               <Link to={link}>
                     <p>{title}</p>
                     <img src={img} alt="이미지" />
-               </a>
+               </Link>
           </li>
      );
 }
@@ -36,7 +37,7 @@ function UList2({ links }) {
 
 export default function Main() {
      const links = [
-          { link: "", title: "전통주란?", img: img1 },
+          { link: "/Whatis", title: "전통주란?", img: img1 },
           { link: "", title: "전통주 검색하기", img: img2 },
           { link: "", title: "전통주와 어울리는 음식", img: img3 },
           { link: "", title: "이 달의 전통주", img: img4 },

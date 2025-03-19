@@ -29,7 +29,7 @@ export default function Header() {
 
      const links = [
           { link: "./Search", title: "전통주 검색하기" },
-          { link: "2", title: "위치 안내" },
+          { link: "", title: "위치 안내" },
           { link: "3", title: "카드 뉴스" },
      ];
 
